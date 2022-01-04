@@ -17,8 +17,9 @@ class TaskFragment : BaseFragment<TaskViewModel, FragmentTaskBinding>() {
     override fun layoutId() = R.layout.fragment_task;
 
     override fun initView(savedInstanceState: Bundle?) {
-        TODO("Not yet implemented")
-//        task_tv.setText("tv");
+//        vp.setText("tv");
+//        vp
+        mDatabind.taskTv.setText(getString(R.string.app_name));
     }
 
 }

@@ -19,7 +19,6 @@ class ShopFragment : BaseFragment<ShopViewModel, FragmentShopBinding>() {
     override fun layoutId() = R.layout.fragment_shop;
 
     override fun initView(savedInstanceState: Bundle?) {
-        TODO("Not yet implemented")
 //        task_tv.setText("tv");
     }
 
