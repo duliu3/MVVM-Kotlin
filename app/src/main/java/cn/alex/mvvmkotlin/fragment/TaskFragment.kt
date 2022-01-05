@@ -19,7 +19,7 @@ class TaskFragment : BaseFragment<TaskViewModel, FragmentTaskBinding>() {
     override fun initView(savedInstanceState: Bundle?) {
 //        vp.setText("tv");
 //        vp
-        mDatabind.taskTv.setText(getString(R.string.app_name));
+        mDatabind.taskTv.text = getString(R.string.app_name);
     }
 
 }

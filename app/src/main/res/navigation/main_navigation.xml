@@ -2,18 +2,12 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/shop_fragment">
+    app:startDestination="@id/main_fragment">
     <fragment
-        android:id="@+id/shop_fragment"
-        android:name="cn.alex.mvvmkotlin.fragment.ShopFragment"
-        android:label="shopFragment">
-        <action
-            android:id="@+id/shop_totask"
-            app:destination="@id/task_fragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+        android:id="@+id/main_fragment"
+        android:name="cn.alex.mvvmkotlin.fragment.MainFragment"
+        android:label="MainFragment">
+
     </fragment>
 
     <fragment
@@ -27,26 +21,17 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
 
-        <action
-            android:id="@+id/task_to_box"
-            app:destination="@id/box_fragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+    <fragment
+        android:id="@+id/shop_fragment"
+        android:name="cn.alex.mvvmkotlin.fragment.BoxFragment"
+        android:label="boxFragment">
     </fragment>
 
     <fragment
         android:id="@+id/box_fragment"
         android:name="cn.alex.mvvmkotlin.fragment.BoxFragment"
         android:label="boxFragment">
-        <action
-            android:id="@+id/box_to_shop"
-            app:destination="@id/shop_fragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 </navigation>
